@@ -1,0 +1,9 @@
+node_modules/
+www/build/
+platforms/
+plugins/
+www/build/
+platforms/*
+plugins/*
+resources/*
+.DS_Store
