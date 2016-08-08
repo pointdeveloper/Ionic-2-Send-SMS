@@ -2,7 +2,8 @@ node_modules/
 www/build/
 platforms/
 plugins/
-www/build/
+www/
+hooks/
 platforms/*
 plugins/*
 resources/*
