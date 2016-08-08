@@ -1,20 +1,14 @@
-<ion-navbar *navbar>
-  <ion-title>
-    Home
-  </ion-title>
-</ion-navbar>
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
 
-<ion-content class="home">
-  <ion-card>
-    <ion-card-header>
-      Card Header
-    </ion-card-header>
-    <ion-card-content>
-      Hello World
-    </ion-card-content>
-  </ion-card>
-
-<button full (click)="sendSMS()">Send SMS</button>
-
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    <button full (click)="sendSMS()">Send SMS</button>
+  </p>
 </ion-content>
-
