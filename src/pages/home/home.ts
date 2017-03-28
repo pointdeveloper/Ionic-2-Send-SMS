@@ -4,8 +4,7 @@ import { NavController } from 'ionic-angular';
 import { SMS } from '@ionic-native/sms';
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
-  providers: [SMS]
+  templateUrl: 'home.html'
 })
 export class HomePage {
 
