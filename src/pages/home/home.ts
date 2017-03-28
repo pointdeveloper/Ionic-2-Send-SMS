@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
+
 import { NavController } from 'ionic-angular';
-
-import { SMS } from 'ionic-native';
-
+import { SMS } from '@ionic-native/sms';
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  providers: [SMS]
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,private smsVar: SMS) {
     
   }
-  sendSMS(){
+sendSMS(){
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
           android: {
-               intent: 'INTENT'  // Opens Default sms app
+               intent: ''  // Opens Default sms app
               //intent: '' // Sends sms without opening default sms app
             }
     }
-    SMS.send('416123456', 'Hello world!',options)
+    this.smsVar.send('416123456', 'Hello world!',options)
       .then(()=>{
         alert("success");
       },()=>{
