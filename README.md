@@ -1,5 +1,5 @@
 # Ionic-2-Send-SMS
-http://pointdeveloper.com/sending-sms-with-ionic-2-app-using-cordova-plugin-sms/
+Full Tutorial at http://pointdeveloper.com/ionic-2-beginner-send-sms-ionic-2-cordova-sms-plugin/
 
 
 <br/>
